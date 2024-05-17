@@ -1,0 +1,244 @@
+<html>
+<head>
+<pre>
+    // var day=prompt ("enter the day");
+    var day=2;
+    switch (day) {
+        case 1:
+            console.log("sunday");
+            break;
+        case 2:
+            console.log("monday");
+            break;
+    
+        default:
+            console.log("this is not a day");
+            break;
+    }
+    console.log(typeof(day));
+    // string in javascript
+    var string="Ashwini"
+    console.log(string.length);
+    //find the type of the values
+
+   function value(num=23) {
+    return num
+    
+   }
+   console.log(typeof(value()));
+     //    find the type of the values 
+    function values(name) {
+    return name
+    
+  }
+    console.log(typeof(values("coding")));
+      // global execution context 
+    for (var i=0;i<5;i++){
+    function hello() {
+        return i;
+        
+    }
+    console.log(hello());
+   }
+// console.log(hello());
+// 
+for (var i=0;i<5;i++){
+    function hello() {
+        console.log(i);
+        return i
+  
+    }
+    console.log(i);
+}
+// function inside for loop
+// 
+ 
+let a;
+a=10;
+if (true) {
+    let a;
+    console.log(a);
+}
+// string in javascript
+
+ a="chaitanya"
+
+
+for(  i of a){
+    
+     console.log(i );
+}
+// console.log(i);
+a="chaitanya"
+for(  i of a){
+    
+    if (i=="a") {
+        i+=2
+        
+    }
+    console.log(i );
+}
+
+//  find  the length of without using the pre-defined method in for loops
+
+ function String_length(str) {
+  let length = 0;
+  for (let i = 0; str[i] !== undefined; i++) {
+    length++;
+  }
+   return length;
+}
+
+const str1 = "Hello, World!";
+console.log(String_length(str1))
+// find the length  using the for in loop
+
+function string_length(str) {
+var length = 0;
+   for (var Hello in str) {
+    length++;
+  }
+    return length;
+}
+
+var str2 = "Hello,good evening";
+console.log(String_length(str2));
+// find the length using the for of loop
+function string1(str) {
+let length = 0;
+for (let miss of str) {
+    length++;
+}
+return length;
+
+const str3 = "Hello, my dear friends";
+ console.log(string1(str3));
+
+} 
+
+</pre>
+</head>
+<body>
+    
+    <script>
+        // var day=prompt ("enter the day");
+        var day=2;
+        switch (day) {
+            case 1:
+                console.log("sunday");
+                break;
+            case 2:
+                console.log("monday");
+                break;
+        
+            default:
+                console.log("this is not a day");
+                break;
+        }
+        console.log(typeof(day));
+        // string in javascript
+        var string="Ashwini"
+        console.log(string.length);
+        //find the type of the values
+
+       function value(num=23) {
+        return num
+        
+       }
+       console.log(typeof(value()));
+         //    find the type of the values 
+        function values(name) {
+        return name
+        
+      }
+        console.log(typeof(values("coding")));
+          // global execution context 
+        for (var i=0;i<5;i++){
+        function hello() {
+            return i;
+            
+        }
+        console.log(hello());
+    }
+    // console.log(hello());
+    // 
+    for (var i=0;i<5;i++){
+        function hello() {
+            console.log(i);
+            return i
+      
+        }
+        console.log(i);
+    }
+    // function inside for loop
+    // 
+     
+    let a;
+    a=10;
+    if (true) {
+        let a;
+        console.log(a);
+    }
+    // string in javascript
+
+     a="chaitanya"
+    
+
+    for(  i of a){
+        
+         console.log(i );
+    }
+    // console.log(i);
+    a="chaitanya"
+    for(  i of a){
+        
+        if (i=="a") {
+            i+=2
+            
+        }
+        console.log(i );
+    }
+    
+    //  find  the length of without using the pre-defined method in for loops
+    
+     function String_length(str) {
+      let length = 0;
+      for (let i = 0; str[i] !== undefined; i++) {
+        length++;
+      }
+       return length;
+    }
+
+    const str1 = "Hello, World!";
+    console.log(String_length(str1))
+    // find the length  using the for in loop
+    
+    function string_length(str) {
+    var length = 0;
+       for (var Hello in str) {
+        length++;
+      }
+        return length;
+    }
+    
+    var str2 = "Hello,good evening";
+    console.log(String_length(str2));
+    // find the length using the for of loop
+    function string1(str) {
+    let length = 0;
+    for (let miss of str) {
+        length++;
+    }
+    return length;
+
+    const str3 = "Hello, my dear friends";
+     console.log(string1(str3));
+
+   } 
+
+    // const str3 = "Hello, my dear friends";
+    // console.log(string1(str3));
+
+    </script>
+</body>
+</html>
