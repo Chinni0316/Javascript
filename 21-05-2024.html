@@ -5,7 +5,7 @@
     </head>
     <body>
         <script>
-            // arrays  using the for of loops
+           // arrays  using the for of loops
             var a=[1,2,3,4,6,7]
             for(r of a){
                 console.log(r);
@@ -21,7 +21,7 @@
                 if (d[s]%2==0){
                 console.log("even");
 
-            }
+            }            
             else{
                 console.log("odd");
             }
@@ -59,26 +59,9 @@
                 
             }
             console.log(natural(100 ));
-            // print ex:input= "ch_ai_ta_ny_a" then find the o/p: ChAiTaNyA
-            // function name(input) {
-            //     var char=input.split("-")
-            //     var result=" "
-            //     for(w=0;w<char.length;w++){
-            //         if(w%2==0){
-            //             result=result+char.toUpperCase()
-            //         }
-            //         else{
-            //             return result
-            //         }
-            //     }
-
-                
-            // }
-            // var input="ch_ai_ta_ny_a"
-            // var output=name(input)
-            // console.log(output)
+            // change the name into capital letter
             function transformString(input) {
-    // Split the input string by underscores to get individual characters
+        
           let chars = input.split('_');
           let result = '';
           for (let i = 0; i < chars.length; i++) {
@@ -99,6 +82,23 @@
          
          let output = transformString(input);
          console.log(output); // Output: ChAiTaNyA
+        //  change name of the _ should write the capital letters
+        h="ch_ai_ta_ny_a";
+       s=""
+        for (n=0;n<h.length;n++){
+            
+            if(h[n]=="_"){
+                n++
+            s+=h[n].toUpperCase()
+            }else{
+                s+=h[n]
+            }
+         }
+           console.log(s);
+    
+     
+      
+     
 
         
             
