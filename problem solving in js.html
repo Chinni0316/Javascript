@@ -1,0 +1,101 @@
+<html>
+<head>
+
+</head>
+<body>
+   <script>
+    // sort the given input by using based on length of the string
+    var a=(["a", "ccc", "dddd", "bb"])
+    console.log(a.sort());
+    // //  find the give number is prime or not 
+     Num=9
+     c=0
+     for(i=2;i<Num;i++){
+        if(Num%i==0){
+            console.log("not prime");
+            c++
+        }
+
+     }
+     if(c==0){
+        console.log("prime");
+     }
+    //  input is 7 is prime number or not
+    num=7
+    s=0
+    for(j=2;j<num;j++){
+        if(num%j==0){
+            console.log("not a prime");
+            j++
+        }
+    }
+    if(s==0){
+        console.log("prime");
+    }
+    // sort the values in given arrays
+    c=[2,3,1,5,4]
+    console.log(c.sort());
+    //  find the factorial of given numbers
+
+     var n=5
+     function factorial(n){
+        if(n=== 0){
+            return 1
+        }
+        else{
+            return n*factorial(n-1)
+        }
+     }
+     console.log(factorial(5));
+    // Map function in javascript
+    var number1=[1,4,9,16,25,36]
+    var squareRoots=number1.map(num =>Math.sqrt(num))
+    console.log(squareRoots);
+    // forEach method in arrays
+    function func() {
+ 
+     // Original array
+    const items = [1, 15, 37];
+    const copy = [];
+    items.forEach(function (item) {
+    copy.push(item +item);
+    });
+    console.log(copy);
+    }
+    func();
+    // reduce method in array function
+    var arr1=[1,3,4,6,7,8,9]
+    function sum_value(sum,num){
+        return sum+num
+    }
+    function mysum(item){
+        console.log(arr1.reduce(sum_value));
+    }
+    mysum()
+    
+    // filter method in array 
+    function voter(age){
+        return age>=18;
+    }
+    function function_name(){
+        var filtered=[25,36,80,8,10,2,9].filter(voter);
+        console.log(filtered);
+    }
+    function_name()
+
+
+
+
+
+
+   
+
+
+     
+    
+
+    
+
+   </script> 
+</body>
+</html>
